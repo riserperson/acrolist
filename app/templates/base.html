@@ -1,0 +1,17 @@
+<html>
+    <head>
+        {% if title %}
+        <title>{{ title }} - DI Apps</title>
+        {% else %}
+        <title>Welcome to DI Apps</title>
+        {% endif %}
+    </head>
+    <body>
+-        <div>
+            DI Apps: 
+            <a href="/index">Home</a>
+            <a href="/login">Login</a>
+        </div>
+        {% block content %}{% endblock %}
+    </body>
+</html>
